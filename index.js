@@ -48,7 +48,6 @@ function actualizarVista(){
 
     const detalleGasto = document.getElementById("resumenGastos");
     detalleGasto.innerHTML = ``;
-    //let filasGasto = ``;
     gastos.forEach((gasto, i)=>{
 
         const filasGasto = document.createElement("tr");
@@ -73,13 +72,6 @@ function actualizarVista(){
             actualizarVista();
         })
 
-        /*
-        filasGasto += `<tr> 
-                            <td> ${gasto.nombre} </td>
-                            <td> $${gasto.valor}</td>
-                            <td> </td> 
-                    </tr>`
-        */
     });
     detalleGasto.innerHTML = filasGasto;
 }
